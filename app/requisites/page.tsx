@@ -9,7 +9,6 @@ import Link from 'next/link'
 interface BankInfo {
   name: string
   cardNumber: string
-  phone: string
   owner: string
   color: string
 }
@@ -18,21 +17,18 @@ const banks: BankInfo[] = [
   {
     name: 'Kaspi Bank',
     cardNumber: '4400 0000 0000 0000',
-    phone: '+7 747 267 4747',
     owner: 'Қуаныш Б.',
     color: 'from-red-500 to-red-600'
   },
   {
     name: 'Freedom Bank',
-    cardNumber: '4400 0000 0000 0000',
-    phone: '+7 747 267 4747',
+    cardNumber: '4002 8900 2213 7883',
     owner: 'Қуаныш Б.',
     color: 'from-blue-500 to-blue-600'
   },
   {
     name: 'Halyk Bank',
-    cardNumber: '4400 0000 0000 0000',
-    phone: '+7 747 267 4747',
+    cardNumber: '4003 0351 2823 2233',
     owner: 'Қуаныш Б.',
     color: 'from-green-500 to-green-600'
   }
@@ -63,7 +59,7 @@ export default function RequisitesPage() {
       <header className="border-b border-border/50 bg-card/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link 
+            <Link
               href="/"
               className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -135,36 +131,6 @@ export default function RequisitesPage() {
                   {/* Divider */}
                   <div className="border-t border-border"></div>
 
-                  {/* Phone Number */}
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Phone className="h-4 w-4" />
-                      <span className="font-medium">Телефон нөмірі</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <code className="flex-1 text-lg md:text-xl font-mono font-semibold text-foreground">
-                        {bank.phone}
-                      </code>
-                      <Button
-                        onClick={() => copyToClipboard(bank.phone, 'phone', bank.name)}
-                        variant="outline"
-                        size="sm"
-                        className="shrink-0"
-                      >
-                        {copiedPhone === bank.name ? (
-                          <>
-                            <Check className="h-4 w-4 mr-1" />
-                            Көшірілді
-                          </>
-                        ) : (
-                          <>
-                            <Copy className="h-4 w-4 mr-1" />
-                            Көшіру
-                          </>
-                        )}
-                      </Button>
-                    </div>
-                  </div>
                 </div>
               </Card>
             ))}
@@ -173,8 +139,7 @@ export default function RequisitesPage() {
           {/* Note */}
           <Card className="p-6 bg-primary/5 border-primary/20">
             <p className="text-center text-muted-foreground leading-relaxed">
-              Төлем жасағаннан кейін, дұғаңызды жіберген кезде тілектер өрісінде хабарласыңыз. 
-              Рақмет сізге және Алла Тағала қабыл етсін!
+              Рахмет сізге және Алла Тағала қабыл етсін!
             </p>
           </Card>
 

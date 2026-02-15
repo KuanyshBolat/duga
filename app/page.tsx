@@ -181,32 +181,6 @@ export default function Page() {
                   </p>
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="wishes" className="text-base font-medium text-foreground">
-                    Қосымша (міндетті емес)
-                  </Label>
-                  <Textarea
-                    id="wishes"
-                    name="wishes"
-                    placeholder="Аллаһ қаласа орындаймын"
-                    value={formData.wishes}
-                    onChange={handleChange}
-                    className="min-h-28 text-base resize-none"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Мысалы: Сіздің атыныздан Құран сатып алып, Әль-Харам мешітіне қою, Меккеден бір нәрсе алып әкелу және т.б. Егер сатып алынатын зат болса төмендегі сілтемеде реквизиттарым бар, реквизиттер бойынша ақша жіберіңіз, сосын осында жіберген сомманызды жазыныз, Аллаһ қаласа орындаймын
-                  </p>
-                  <Link href="/requisites" className="block">
-                    <Button 
-                      type="button" 
-                      variant="outline" 
-                      className="w-full text-sm"
-                    >
-                      Реквизиттерді көру
-                    </Button>
-                  </Link>
-                </div>
-
                 <Button
                   type="submit"
                   disabled={isLoading}
