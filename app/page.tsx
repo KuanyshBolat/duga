@@ -198,7 +198,7 @@ export default function Page() {
       <footer className="border-t border-border/50 bg-card/50 backdrop-blur-sm mt-12">
         <div className="container mx-auto px-4 py-8">
           <p className="text-center text-muted-foreground text-sm">
-            Алла Тағала сіздердің дұғаларыңызды қабыл етсін және баракасын берсін • Ин шаа Аллаһ
+            Алла Тағала сіздердің дұғаларыңызды қабыл етсін және берекесін берсін • Ин шаа Аллаһ
           </p>
         </div>
       </footer>
