@@ -20,15 +20,9 @@ const banks: BankInfo[] = [
     owner: 'Қуаныш Б.',
     color: 'from-red-500 to-red-600'
   },
-  {
-    name: 'Freedom Bank',
-    cardNumber: '4002 8900 2213 7883',
-    owner: 'Қуаныш Б.',
-    color: 'from-blue-500 to-blue-600'
-  },
-  {
+    {
     name: 'Halyk Bank',
-    cardNumber: '4003 0351 2823 2233',
+    cardNumber: '+7 747 267 47 47',
     owner: 'Қуаныш Б.',
     color: 'from-green-500 to-green-600'
   }
@@ -101,7 +95,7 @@ export default function RequisitesPage() {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <CreditCard className="h-4 w-4" />
-                      <span className="font-medium">Карта нөмірі</span>
+                      <span className="font-medium">Келесі номер бойынша аударым жасасаныз болады</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <code className="flex-1 text-xl md:text-2xl font-mono font-semibold text-foreground tracking-wider">
