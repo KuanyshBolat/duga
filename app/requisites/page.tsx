@@ -16,7 +16,7 @@ interface BankInfo {
 const banks: BankInfo[] = [
   {
     name: 'Kaspi Bank',
-    cardNumber: '4400 0000 0000 0000',
+    cardNumber: '+7 747 267 47 47',
     owner: 'Қуаныш Б.',
     color: 'from-red-500 to-red-600'
   },
