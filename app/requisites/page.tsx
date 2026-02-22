@@ -72,10 +72,10 @@ export default function RequisitesPage() {
           {/* Intro */}
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground text-balance">
-              Төлем реквизиттері
+              Қолдау көрсеткіңіз келсе
             </h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Қолдау көрсеткіңіз келсе, төмендегі реквизиттердің кез келгенін пайдалануға болады
+              төмендегі реквизиттердің кез келгенін пайдалануға болады
             </p>
           </div>
 
