@@ -176,7 +176,7 @@ export default function Page() {
                 <div className="mt-10">
                   <Link href="/requisites" className="w-full">
                     <Button
-                        className="w-full hover:bg-primary/90 text-primary-foreground"
+                        className="w-full"
                     >
                       Реквизиттерді көру
                     </Button>
