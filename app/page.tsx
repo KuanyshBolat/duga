@@ -14,7 +14,6 @@ export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
-    name: '',
     dua: '',
     quranDedication: '',
     wishes: ''
@@ -133,21 +132,7 @@ export default function Page() {
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-base font-medium text-foreground">
-                    Аты-жөні
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    placeholder="Толық атыңыз"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="h-12 text-base"
-                  />
-                </div>
+
 
                 <div className="space-y-2">
                   <Label htmlFor="dua" className="text-base font-medium text-foreground">
