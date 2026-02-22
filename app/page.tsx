@@ -173,7 +173,7 @@ export default function Page() {
                 >
                   {isLoading ? 'Жіберілуде...' : 'Дұғаны жіберу'}
                 </Button>
-                <div className="p-8 md:p-10 bg-card border-border shadow-xl">
+                <div className="mt-10">
                   <Link href="/requisites" className="w-full">
                     <Button
                         className="w-full hover:bg-primary/90 text-primary-foreground"
