@@ -14,6 +14,7 @@ export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
+    name: '',
     dua: '',
     quranDedication: '',
     wishes: ''
@@ -133,19 +134,34 @@ export default function Page() {
 
               <form onSubmit={handleSubmit} className="space-y-6">
 
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="text-base font-medium text-foreground">
+                    Аты-жөні
+                  </Label>
+                  <Input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      placeholder="Толық атыңыз"
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="h-12 text-base"
+                  />
+                </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="dua" className="text-base font-medium text-foreground">
                     Дұға
                   </Label>
                   <Textarea
-                    id="dua"
-                    name="dua"
-                    required
-                    placeholder="Дұғаңызды осы жерге жазыңыз..."
-                    value={formData.dua}
-                    onChange={handleChange}
-                    className="min-h-32 text-base resize-none"
+                      id="dua"
+                      name="dua"
+                      required
+                      placeholder="Дұғаңызды осы жерге жазыңыз..."
+                      value={formData.dua}
+                      onChange={handleChange}
+                      className="min-h-32 text-base resize-none"
                   />
                 </div>
 
@@ -154,22 +170,23 @@ export default function Page() {
                     Құран бағыштау (міндетті емес)
                   </Label>
                   <Textarea
-                    id="quranDedication"
-                    name="quranDedication"
-                    placeholder="Тізім жазып жіберіңіз: ата-ана, ата-әже, аға-іні, бауырлар.&#10;Мысалы:&#10;Ботанбайұлы Ибинжан, &#10;Қозбағарқызы Әлімбүбі"
-                    value={formData.quranDedication}
-                    onChange={handleChange}
-                    className="min-h-32 text-base resize-none"
+                      id="quranDedication"
+                      name="quranDedication"
+                      placeholder="Тізім жазып жіберіңіз: ата-ана, ата-әже, аға-іні, бауырлар.&#10;Мысалы:&#10;Ботанбайұлы Ибинжан, &#10;Қозбағарқызы Әлімбүбі"
+                      value={formData.quranDedication}
+                      onChange={handleChange}
+                      className="min-h-32 text-base resize-none"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Тек аты мен әкесінің атын жазыңыз, тегі қажет емес. Мысалы:&#10;Ботанбайұлы Ибинжан, &#10;Қозбағарқызы Әлімбүбі
+                    Тек аты мен әкесінің атын жазыңыз, тегі қажет емес. Мысалы:&#10;Ботанбайұлы
+                    Ибинжан, &#10;Қозбағарқызы Әлімбүбі
                   </p>
                 </div>
 
                 <Button
-                  type="submit"
-                  disabled={isLoading}
-                  className="w-full h-12 text-base font-semibold bg-primary hover:bg-primary/90 text-primary-foreground"
+                    type="submit"
+                    disabled={isLoading}
+                    className="w-full h-12 text-base font-semibold bg-primary hover:bg-primary/90 text-primary-foreground"
                 >
                   {isLoading ? 'Жіберілуде...' : 'Дұғаны жіберу'}
                 </Button>
