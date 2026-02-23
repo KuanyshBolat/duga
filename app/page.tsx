@@ -219,21 +219,21 @@ export default function Page() {
               <p className="text-foreground font-medium">
                 Мен міндетті түрде сіздің дұғаңызды қасиетті Кағба жанында оқимын, Ин шаа Аллаһ.
               </p>
-              <div className="pt-4 border-t border-border">
-                <p className="text-muted-foreground">
-                  Қалауыңыз бойынша маған жолға ақша жібере аласыз, бірақ бұл міндетті емес =)
-                </p>
-              </div>
+              {/*<div className="pt-4 border-t border-border">*/}
+              {/*  <p className="text-muted-foreground">*/}
+              {/*    Қалауыңыз бойынша маған жолға ақша жібере аласыз, бірақ бұл міндетті емес =)*/}
+              {/*  </p>*/}
+              {/*</div>*/}
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col gap-2 pt-4">
-            <Link href="/requisites" className="w-full">
-              <Button
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-              >
-                Реквизиттерді көру
-              </Button>
-            </Link>
+            {/*<Link href="/requisites" className="w-full">*/}
+            {/*  <Button*/}
+            {/*    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"*/}
+            {/*  >*/}
+            {/*    Реквизиттерді көру*/}
+            {/*  </Button>*/}
+            {/*</Link>*/}
             <Button
               onClick={() => {
                 setIsModalOpen(false)
